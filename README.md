@@ -1,51 +1,95 @@
-# Unit 17 Nosql Homework: Workout Tracker
+# The Fitness Tracker [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+---
 
-## User Story
+## Table of Contents
 
-- As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+---
 
-## Business Context
+### [Description](#Descriptions)
 
-A consumer will reach their fitness goals quicker when they track their workout progress.
+### [Screenshots](#Screenshots)
 
-## Acceptance Criteria
+### [Installation](#Installations)
 
-When the user loads the page, they should be given the option to create a new workout, or continue with their last workout.
+### [Usage](#Usages)
 
-The user should be able to:
+### [License](#License)
 
-- Add exercises to a previous workout plan.
+### [Contributing](#Contributions)
 
-- Add new exercises to a new workout plan.
+### [Tests](#Tests)
 
-- View multiple the combined weight of multiple exercises on the `stats` page.
+### [Questions](#Questions)
 
-## Commit Early and Often
+### [GitHub](#GitHub)
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+---
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+### <a name="Description"></a>Descriptions:
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+## As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
 
-Follow these guidelines for committing:
+### <a name="Screenshots"></a>Screenshots:
 
-- Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+![image](https://user-images.githubusercontent.com/66797344/89968335-93355980-dc21-11ea-8bf0-af3fdbab0b91.png)
 
-- Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+**Video:** https://drive.google.com/file/d/1-EpDr6apLjrJQCwQrSWeE-avtt-bjSiz/view
 
-- Don't commit half done work, for the sake of your collaborators (and your future self!)
+### <a name="Installation"></a>Installations:
 
-- Test your application before you commit to ensure functionality at every step in the development process
+I created a fitness tracker using **MongoDB**, **Mongoose**, **Express**, **Morgan**. I downloaded `npm init`, `npm install`, `npm express`, `npm morgan` and `npm mongoose`. As well I used `npm nodemon` to test the app.
 
-We would like you to have well over 200 commits by graduation, so commit early and often!
+### <a name="Usage"></a>Usages:
 
-## Submission on BCS
+When the user loads the page, they are given the option to create a new workout, or continue with their last workout.
 
-You are required to submit the following:
+---
 
-- The URL to the deployed application
+### <a name="License"></a>License:
 
-- The URL to the Github repository
+**MIT License Copyright (c) 2020 Joshua Wilensky**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+### <a name="Contributing"></a>Contributions:
+
+- Ben Wright
+- Justin Pinero
+- Benjamin Benson
+
+---
+
+### <a name="Tests"></a>Tests:
+
+- [x] nodemon
+
+---
+
+### <a name="Questions"></a>Email the Author:
+
+joshwilensky@gmail.com
+
+---
+
+### <a name="Github"></a>GitHub Account:
+
+[Joshua Wilensky](http://github.com/joshwilensky)
