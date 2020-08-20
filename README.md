@@ -88,7 +88,7 @@ SOFTWARE.
 
 ### <a name="Deployment"></a>Deployment:
 
-## **Heroku Deployment:** https://serene-scrubland-64546.herokuapp.com/
+**Heroku Deployment:** https://serene-scrubland-64546.herokuapp.com/
 
 ### <a name="Questions"></a>Email the Author:
 
