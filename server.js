@@ -2,6 +2,7 @@ const express = require("express");
 // const logger = require("morgan");
 const mongoose = require("mongoose");
 const app = express();
+const PORT = 3000
 //middleware
 // app.use(logger("dev"));
 app.use(express.urlencoded({
@@ -20,6 +21,6 @@ require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
 // Listen on port 3000
-app.listen(3000, () => {
-    console.log("App running on port 3000!");
+app.listen(PORT, () => {
+    console.log(`App running on port ${PORT}`);
 });
