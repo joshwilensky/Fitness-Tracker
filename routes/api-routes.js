@@ -3,7 +3,7 @@ const Workout = db.Workout;
 
 module.exports = function (app) {
 
-    // CREATE WORKOUT POST
+    // CREATES THE WORKOUT POST
     app.post("/api/workouts", ({
         body
     }, res) => {
@@ -16,7 +16,7 @@ module.exports = function (app) {
             });
     });
 
-    // CREATE A PUT FOR WORKOUT
+    // CREATES A PUT FOR THE WORKOUT
     app.put("/api/workouts/:id", (req, res) => {
         Workout.findByIdAndUpdate(req.params.id, {
                 $push: {
@@ -31,7 +31,7 @@ module.exports = function (app) {
             });
     });
 
-    // GET WORKOUT INFO
+    // CREATES A GET FOR THE WORKOUT INFO
     app.get("/api/workouts", (req, res) => {
         //  grabbing it from database
         //  populate properties array

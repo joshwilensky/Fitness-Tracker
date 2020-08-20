@@ -39,6 +39,7 @@ const WorkoutSchema = new Schema({
         virtuals: true,
     },
 });
+
 // ADDS A VIRTUAL FIELD TO THE SCHEMA
 WorkoutSchema.virtual("totalWeight").get(function () {
     return this.weight * this.reps * this.sets;
@@ -50,6 +51,6 @@ WorkoutSchema.virtual("totalDuration").get(function () {
     }, 0);
 });
 
-// CREATE WORKOUT MODEL
+// CREATES THE WORKOUT MODEL
 const Workout = mongoose.model("Workout", WorkoutSchema);
 module.exports = Workout;
