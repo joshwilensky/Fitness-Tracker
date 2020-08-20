@@ -1,43 +1,55 @@
 const mongoose = require("mongoose");
-
 const Schema = mongoose.Schema;
 
-const workout = new Schema({
+const WorkoutSchema = new Schema({
     day: {
         type: Date,
-        default: () => new Date(),
+        default: Date.now,
     },
-
     exercises: [{
         type: {
             type: String,
             trim: true,
-            required: "Exercise type is required."
+            required: "Please enter a valid exercise!",
         },
         name: {
             type: String,
             trim: true,
-            required: "Enter the exercise name:"
+            required: "Please enter a valid exercise name!",
         },
         duration: {
             type: Number,
-            required: "Enter a duration time:"
+            required: "Please enter a valid duration time in seconds!",
         },
         weight: {
-            type: Number
+            type: Number,
         },
         reps: {
-            type: Number
+            type: Number,
         },
         sets: {
-            type: Number
+            type: Number,
         },
         distance: {
-            type: Number
-        }
-    }]
+            type: Number,
+        },
+    }, ],
+}, {
+    toJSON: {
+        virtuals: true,
+    },
+});
+// ADDS A VIRTUAL FIELD TO THE SCHEMA
+WorkoutSchema.virtual("totalWeight").get(function () {
+    return this.weight * this.reps * this.sets;
 });
 
-const Workout = mongoose.model("Workout", workout);
+WorkoutSchema.virtual("totalDuration").get(function () {
+    return this.exercises.reduce((total, exercise) => {
+        return total + exercise.duration;
+    }, 0);
+});
 
+// CREATE WORKOUT MODEL
+const Workout = mongoose.model("Workout", WorkoutSchema);
 module.exports = Workout;
