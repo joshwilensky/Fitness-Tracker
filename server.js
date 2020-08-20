@@ -3,6 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const PORT = 3000
+require("dotenv").config()
 //middleware
 // app.use(logger("dev"));
 app.use(express.urlencoded({
@@ -14,6 +15,8 @@ app.use(express.static("public"));
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout"
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true
 });
 
 //routes
